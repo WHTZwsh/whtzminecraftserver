@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHTZ Minecraft Server</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    
+    <div class="container">
+        <div class="server-header">
+            <div class="logo-block">
+                <span class="logo-text">WHTZ</span>
+            </div>
+            <h1 class="server-title">WHTZ Minecraft Server</h1>
+            <p class="server-subtitle">Join the ultimate Minecraft adventure!</p>
+        </div>
+
+        <div class="button-group">
+            <button class="mc-button" id="addServerBtn">
+                <span class="btn-text">Add Server</span>
+            </button>
+            <button class="mc-button" id="helpBtn">
+                <span class="btn-text">Help</span>
+            </button>
+        </div>
+
+        <div class="status-bar">
+            <span class="status-dot online"></span>
+            <span class="status-text">Server Online</span>
+            <span class="player-count">Players: 42/100</span>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="addServerModal">
+        <div class="modal-content mc-panel">
+            <div class="modal-header">
+                <h2>Server Info</h2>
+                <button class="close-btn" id="closeAddServer">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="info-row">
+                    <label>Server IP:</label>
+                    <div class="copy-group">
+                        <input type="text" id="serverIP" value="xxx.xxx.xxx" readonly>
+                        <button class="copy-btn" data-copy="serverIP">
+                            <span class="copy-icon">📋</span> Copy
+                        </button>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <label>Port:</label>
+                    <div class="copy-group">
+                        <input type="text" id="serverPort" value="19083" readonly>
+                        <button class="copy-btn" data-copy="serverPort">
+                            <span class="copy-icon">📋</span> Copy
+                        </button>
+                    </div>
+                </div>
+                <div class="copy-toast" id="copyToast">Copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="helpModal">
+        <div class="modal-content mc-panel">
+            <div class="modal-header">
+                <h2>Help & FAQ</h2>
+                <button class="close-btn" id="closeHelp">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="coming-soon">
+                    <div class="coming-icon">🚧</div>
+                    <p class="coming-text">Coming Soon</p>
+                    <p class="coming-sub">敬请期待...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/copy.js"></script>
+</body>
+</html>
