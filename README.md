@@ -7,11 +7,8 @@ whtz-server/
 ├── index.html
 ├── css/
 │   ├── style.css
-│   └── animations.css
 ├── js/
 │   ├── main.js
-│   ├── modal.js
-│   └── copy.js
 └── README.md
 ```
 
