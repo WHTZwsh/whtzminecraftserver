@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHTZ Minecraft Server</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg-grid"></div>
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="logo" id="logoMark">
+                <span class="brace">{</span>
+                <span class="wht">WHT</span>
+                <span class="paren">(</span>
+                <span class="paren">)</span>
+                <span class="zwrap">Z<span class="ghost">👻</span></span>
+                <span class="r">®</span>
+            </div>
+            <div class="brand-text">
+                <span class="brand-name">WHTZ</span>
+                <span class="brand-sub">Minecraft Server</span>
+            </div>
+        </div>
+        <div class="status">
+            <span class="dot"></span>
+            <span class="status-label">Online</span>
+            <span class="players">42/100</span>
+        </div>
+    </header>
+
+    <main class="stage">
+        <section class="hero card">
+            <div class="hero-copy">
+                <span class="eyebrow">JOIN THE REALM</span>
+                <h1 class="title">WHTZ<br>Minecraft Server</h1>
+                <p class="desc">A clean, fast and friendly survival community. Zero drama, full adventure.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" id="addServerBtn">
+                        <span class="btn-dot"></span>Add Server
+                    </button>
+                    <button class="btn btn-ghost" id="helpBtn">Help</button>
+                </div>
+            </div>
+            <div class="hero-art card-inner">
+                <div class="block-stack">
+                    <div class="b b1"></div>
+                    <div class="b b2"></div>
+                    <div class="b b3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat card"><b data-count="128">0</b><span>Online Now</span></div>
+            <div class="stat card"><b>99.9%</b><span>Uptime</span></div>
+            <div class="stat card"><b>1.21</b><span>Latency (ms)</span></div>
+            <div class="stat card"><b>v1.21</b><span>Version</span></div>
+        </section>
+    </main>
+
+    <div class="modal-mask" id="addServerModal">
+        <div class="modal card">
+            <div class="modal-head">
+                <div>
+                    <span class="eyebrow">SERVER INFO</span>
+                    <h2>Add WHTZ to your list</h2>
+                </div>
+                <button class="btn-close" id="closeAddServer" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="field">
+                    <label>Server IP</label>
+                    <div class="input-group">
+                        <input type="text" id="serverIP" value="xxx.xxx.xxx" readonly>
+                        <button class="btn btn-primary btn-sm" data-copy="serverIP">Copy</button>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Port</label>
+                    <div class="input-group">
+                        <input type="text" id="serverPort" value="19083" readonly>
+                        <button class="btn btn-primary btn-sm" data-copy="serverPort">Copy</button>
+                    </div>
+                </div>
+                <div class="toast" id="copyToast">Copied to clipboard</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-mask" id="helpModal">
+        <div class="modal card">
+            <div class="modal-head">
+                <div>
+                    <span class="eyebrow">HELP & FAQ</span>
+                    <h2>Need a hand?</h2>
+                </div>
+                <button class="btn-close" id="closeHelp" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body coming">
+                <div class="coming-emoji">🚧</div>
+                <p class="coming-title">Coming Soon</p>
+                <p class="coming-sub">敬请期待 · 文档正在路上</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
